@@ -1,0 +1,19 @@
+{
+  "name": "ethersome-gui",
+  "version": "1.0.0",
+  "description": "A Gui For EtherSome",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron src/main.js"
+  },
+  "author": "IIpho3nix",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@metamask/eth-sig-util": "^4.0.1",
+    "@unstoppabledomains/resolution": "^8.2.0",
+    "@walletconnect/client": "^1.7.8",
+    "electron": "^19.0.9",
+    "ethers": "^5.6.9",
+    "jsqr": "^1.4.0"
+  }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- IIpho3nix here And I Need To Say I Honestly Have No Idea How To Set This Up Properly So Ima Not Touch it -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"> -->
+    <link href="../css/index.css" rel="stylesheet">
+    <title>EtherSome</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <a onclick="mainclick()" id="amain"><img src="../icons/eth.svg" width="40" height="40" class="ethicon" id="ethicon"></a>
+      <hr width="60"></hr>
+      <a onclick="wcclick()" id="awc"><img src="../icons/wc.svg" width="40" height="40" class="icon" id="wcicon"></a>
+      <br>
+      <a onclick="webclick()" id="aweb"><img src="../icons/web.svg" width="40" height="40" class="icon" id="webicon"></a>
+      <a onclick="settingsclick()" id="asettings"><img src="../icons/settings.svg" width="40" height="40" class="icon" id="settingsicon"></a>
+      <h1 class="version"><span id="version">v1.0.0</span></h1>
+    </div>
+
+    <div class="main" id="main">
+      <div class="innercenter">
+        <h1 style="font-size: 60px;">Main</h1>
+      </div>
+    </div>
+
+    <div class="wc" id="wc">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="innercenter divbox">
+        <img src="../icons/wc-banner.svg" height="40">
+        <br>
+        <br>
+        <br>
+        <button class="guielement" id="scnbtn">Scan</button>
+        <br>
+        <h1 style="font-size: 15px;">OR</h1>
+        <input type="text" class="guielement" id="wcuri" placeholder="Paste uri">
+      </div>
+    </div>
+
+    <div class="web" id="web">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="innercenter divbox">
+        <h1>Resolve Addres</h1>
+        <br>
+        <input type="text" class="guielement" id="rsvinput" placeholder="Enter Web3 Addres">
+        <br>
+        <br>
+        <br>
+        <button class="guielement" id="rsvbtn">Resolve</button>
+        <br>
+        <br>
+        <br>
+        <a id="resolvedurl"></a>
+      </div>
+    </div>
+
+    <div class="settings" id="settings">
+      <div class="innercenter">
+        <h1 style="font-size: 60px;">Settings</h1>
+      </div>
+
+      <div class="innercenter">
+        <hr width="650"></hr>
+      </div>
+
+      <div class="innercenter">
+        <h1>Provider</h1>
+      </div>
+
+      <div class="innercenter">
+        <select class="setsselect" id="prvselect"></select>
+        <br>
+        <br>
+        <div class="innercenter">
+          <button class="guielement" id="prvbutton" onclick="askUserForChain()">Add</button>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <div class="innercenter">
+        <h1>Currency</h1>
+      </div>
+
+      <div class="innercenter">
+        <select class="setsselect" id="crrselect"></select>
+        <br>
+        <br>
+        <div class="innercenter">
+          <button class="guielement" id="crrbutton" onclick="askUserForCurrency()">Add</button>
+        </div>
+      </div>
+
+    </div>
+    
+    <script src="../js/questions.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/sidebarHandler.js"></script>
+    <script src="../js/walletConnectHandler.js"></script>
+    <script src="../js/webHandler.js"></script>
+    <script src="../js/walletCreator.js"></script>
+    <script src="../js/init.js"></script>
+  </body>
+</html>

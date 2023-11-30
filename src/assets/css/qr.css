@@ -1,0 +1,27 @@
+html {
+    user-select: none;
+}
+
+.guielement {
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing:border-box;
+    outline: none;
+    width: 150px;
+    height: 35px;
+    border:0;
+    text-align: center;
+    color: white;
+    border-radius: 45px;
+    cursor: pointer;
+    background: rgb(32, 32, 32);
+}
+
+.guielement:hover {
+    background: rgb(66, 66, 66);
+}
+
+.innercenter {
+    display: table;
+    margin: 0 auto;
+}
